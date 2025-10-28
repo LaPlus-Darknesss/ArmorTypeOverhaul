@@ -6,6 +6,11 @@ local LONE_WOLF_STATUS = "MOD_LONE_WOLF_BUFF"   -- defined in your StatusData
 local LONE_WOLF_MAX    = 2
 local LONE_WOLF_RANGE  = 8.0
 
+local LONE_WOLF_MARKER = "MOD_LONE_WOLF_MARKER"
+local function HasLoneWolfMarker(who)
+  return Osi.HasActiveStatus(who, LONE_WOLF_MARKER) == 1
+end
+
 -- Utility: is the handle a valid, conscious party ally of 'who' and not 'who' itself?
 local function IsValidAlly(who, candidate)
   if not candidate or candidate == who then return false end
@@ -59,6 +64,7 @@ end
 
 -- Core handler: called when a character's turn ends
 local function OnCharacterTurnEnded(char)
+if HasLoneWolfMarker(char) ~= true then return end
   -- Only care about characters that actually have our passive later (we’ll add a check when we wire PassiveData).
   -- For now, keep it universal so you can see it trigger during tests.
   local allyNear = AllyWithinRange(char, LONE_WOLF_RANGE)
