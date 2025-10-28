@@ -1,0 +1,19 @@
+name: CI
+on:
+  push:
+  pull_request:
+
+jobs:
+  sanity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify repo structure
+        run: |
+          test -d Data
+          test -d Public
+          test -d Scripts
+          test -d docs
+          test -d tools
+      - name: Show changed files (debug)
+        run: git diff --name-only HEAD^ HEAD || true
