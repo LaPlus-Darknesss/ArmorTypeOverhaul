@@ -1,0 +1,7 @@
+Spec: Shadowstep
+Type: Passive
+Trigger: After Dash/Disengage/Hide (main action only)
+Effect: Bank “Momentum”; your next attack within 2 turns has Advantage (max 1 bank)
+Duration: 2 turns or until consumed
+Cooldown: —
+Engine Note: Will later become a PassiveData entry + a temporary status (‘Momentum’) consumed on next attack.
