@@ -3,6 +3,10 @@
 
 Ext.Require("Scripts/ATO_Events.lua")
 
+Ext.Require("Scripts/ATO_LoneWolf.lua")
+
 Ext.Events.SessionLoaded:Subscribe(function (_)
   Ext.Utils.Print("[ATO] SessionLoaded")
 end)
+
+
