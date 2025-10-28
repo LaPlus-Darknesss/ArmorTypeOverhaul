@@ -1,0 +1,10 @@
+new entry "MOD_LONE_WOLF"
+type "PassiveData"
+data "DisplayName" "Lone Wolf"
+data "Description" "At the end of your turn, if no ally is within 8 m, gain +1 to-hit next turn (stacks to +2); resets if you end any turn with an ally within 8 m."
+; Implementation plan:
+; - In the next step, we'll add logic (via Script Extender) that:
+;   (a) checks allies within 8 m at end of your turn,
+;   (b) if none -> apply Status 'MOD_LONE_WOLF_BUFF' (add 1 stack, up to 2),
+;   (c) if any -> remove all stacks of 'MOD_LONE_WOLF_BUFF'.
+; - For now this is a data placeholder so your pipeline recognizes the passive entry.
