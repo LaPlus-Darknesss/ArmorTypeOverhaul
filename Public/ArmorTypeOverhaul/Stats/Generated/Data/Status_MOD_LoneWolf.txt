@@ -1,0 +1,13 @@
+new entry "MOD_LONE_WOLF_BUFF"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "Lone Wolf"
+data "Description" "You fight better alone. +1 to-hit (stacks to +2); removed if you end a turn near an ally (≤8 m)."
+data "StackId" "MOD_LONE_WOLF_STACK"
+data "StackType" "Stack"           ; allows stacking
+data "MaxStackAmount" "2"
+data "Boosts" "AttackRollBonus(1)"
+; Notes:
+; - StatusType BOOST = a buff that applies stat boosts.
+; - Boosts: AttackRollBonus(1) adds +1 to hit; stacking twice reaches +2 total.
+; - We'll manage when this is applied/removed via a Passive + script in a later step.
