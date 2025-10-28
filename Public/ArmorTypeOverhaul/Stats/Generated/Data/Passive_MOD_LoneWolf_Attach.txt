@@ -1,0 +1,6 @@
+new entry "MOD_LONE_WOLF_ATTACH"
+type "PassiveData"
+data "DisplayName" "Lone Wolf (Attach)"
+data "Description" "Test-only passive that grants the Lone Wolf marker while active."
+data "StatusesOnApply" "MOD_LONE_WOLF_MARKER"
+data "StatusesOnRemove" "MOD_LONE_WOLF_MARKER;Remove"

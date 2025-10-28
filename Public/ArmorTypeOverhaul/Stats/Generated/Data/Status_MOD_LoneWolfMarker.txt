@@ -1,0 +1,9 @@
+new entry "MOD_LONE_WOLF_MARKER"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" ""
+data "Description" ""
+data "Hidden" "Yes"              ; invisible in UI
+data "StackId" "MOD_LW_MARKER"
+data "MaxStackAmount" "1"
+; No Boosts: it's just a flag we can check in scripts.
