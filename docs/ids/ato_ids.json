@@ -1,0 +1,10 @@
+{
+  "module_uuid": "40af5698-53a5-4b97-af1d-60e57b85e3dd",
+  "status_prefix": "MOD_",
+  "lua_namespace": "ATO_",
+  "ids": {
+    "statuses": [],
+    "passives": [],
+    "conditions": []
+  }
+}

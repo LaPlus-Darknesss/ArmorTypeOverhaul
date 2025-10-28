@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+  <version major="4" minor="0" revision="0" build="49"/>
+  <region id="Mods">
+    <node id="Module">
+      <attribute id="UUID" type="FixedString" value="40af5698-53a5-4b97-af1d-60e57b85e3dd"/>
+      <attribute id="Folder" type="LSString" value="ArmorTypeOverhaul"/>
+      <attribute id="Name" type="LSString" value="Armor Type Overhaul"/>
+      <attribute id="Author" type="LSString" value="LaPlus-Darknesss"/>
+      <attribute id="Description" type="LSString" value="Armor framework overhaul (Light/Medium/Heavy) with tags."/>
+      <attribute id="Version64" type="int64" value="1"/>
+    </node>
+  </region>
+</save>
