@@ -1,0 +1,7 @@
+Spec: Lone Wolf
+Type: Passive
+Trigger: End of your turn with no ally within 8 m
+Effect: +1 to-hit on your next turn; stacks to +2; resets if any turn ends with an ally within 8 m
+Duration: Until start of your next turn
+Cooldown: —
+Engine Note: Will later become a PassiveData entry that applies a temporary status at end-of-turn if alone.
